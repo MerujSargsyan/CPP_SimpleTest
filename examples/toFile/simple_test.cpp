@@ -1,6 +1,7 @@
 #include <SimpleTester.hpp>
 #include <iostream>
 #include <fstream>
+#include <string>
 
 bool passingTest1() {
     return 5 == 5;

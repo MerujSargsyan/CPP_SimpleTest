@@ -25,6 +25,7 @@ int main(void) {
     theTester.registerTest("Test2", passingTest2);
     theTester.registerTest("Test3", failingTest3);
     theTester.registerTest("Test4", inputTest, 10, 10);
+    theTester.registerTest("Lambda", [](){return true;});
 
     theTester.runTests();
 

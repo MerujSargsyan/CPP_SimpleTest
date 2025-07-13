@@ -12,7 +12,6 @@
 namespace ST {
 
 class Tester {
-    using Test = std::function<bool()>;
     public:
     Tester() : name{"Anonymous Tester"}, outStream{std::cout} {};
 
@@ -22,6 +21,12 @@ class Tester {
 
     Tester(const std::string& aTesterName, std::ostream& aStream) : name{aTesterName}, outStream{aStream} {};
 
+    /**
+     * Usage:
+     *
+     * theTester.registerTest("Test Name", Callable, Argumens...);
+     */
+    using Test = std::function<bool()>;
     template <typename Func, typename... Args>
         void registerTest(const std::string& aName, Func&& aFunc, Args&&... anArgs) {
 #if __cplusplus >= 201703L
