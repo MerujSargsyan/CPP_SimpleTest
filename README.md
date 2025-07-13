@@ -46,6 +46,8 @@ int terminalOutput() {
 }
 ```
 
+![TerminalOutput](images/terminalDisplay.png)
+
 Output into File:
 ```cpp
 #include <fstream>
@@ -62,6 +64,7 @@ int fileOutput() {
     return 0;
 }
 ```
+![FileOutput](images/fileDisplay.png)
 
 ## TEST GROUPS:
 
