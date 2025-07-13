@@ -1,0 +1,18 @@
+
+---------------------------------------------
+Tester Simple Tester >> File is running;
+
+Running Test1 test
+Test Test1 result: [32m PASS[0m 
+
+Running Test2 test
+Test Test2 result: [32m PASS[0m 
+
+Running Test3 test
+Test Test3 result: [31m FAIL[0m 
+
+Running Test4 test
+Test Test4 result: [32m PASS[0m 
+
+PASSED 3/4 Test(s)
+---------------------------------------------
