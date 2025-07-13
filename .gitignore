@@ -1,2 +1,3 @@
-artifs/*
-build/*
+**/artifs/*
+**/build/*
+**/.DS_Store/
