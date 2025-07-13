@@ -16,7 +16,7 @@ but may accept **any type** and **any number** of arguments
 
 - ***NOTE:*** The Tester object is in namespace ST (SimpleTester)
 
-## Usage:
+## USAGE:
 
 Pre-defined Tests:
 ```cpp
@@ -50,7 +50,7 @@ Output into File:
 ```cpp
 #include <fstream>
 
-int file_output() {
+int fileOutput() {
     std::ofstream aFile{"path/to/file.ext"};
     ST::Tester theTester{"Tester Name", aFile}; 
 
@@ -61,6 +61,16 @@ int file_output() {
     theTester.runTests();
     return 0;
 }
+```
+
+## TEST GROUPS:
+
+Groups are done using different Tester objects
+
+```cpp
+ST::Tester group1{"Group 1"};
+ST::Tester group2{"Group 2"};
+// ...
 ```
 
 ## CONTRIBUTIONS:
